@@ -46,7 +46,7 @@ def main():
                 sys.exit("Game over!")
             for bullet in shots:
                 if bullet.collides(a):
-                    a.kill()
+                    a.split()
                     bullet.kill()
 
         for o in drawable:
